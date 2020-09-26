@@ -1,0 +1,40 @@
+<html>
+
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  </head>
+
+  <body>
+    
+    <div id="butt-container">
+      <button id="showText", class="ripple">Check selection</button>
+      <button id="takePicture", class="ripple"><i id="takePictureIcon" class="material-icons">camera_alt</i></button>
+    </div>
+
+    <div id="capture-zone">
+
+      <div id="text-container">
+        <i id="inputText">Selected text goes here</i>
+      </div>
+    
+      <div id="summary-block">
+            <span id="toxicity", class="label gray">Toxicity</span>
+            <span id="severe_toxicity", class="label gray">Severe toxicity</span>
+            <span id="identity_attack", class="label gray">Identity attack</span>
+            <span id="insult", class="label gray">Insult</span>
+            <span id="threat", class="label gray">Threat</span>
+            <span id="sexual_explicit", class="label gray">Sexual explicit</span>
+            <span id="obscene", class="label gray">Obscene</span>    
+      </div>
+      
+    </div>
+
+    <div id="myProgress"><div id="myBar"></div></div>
+    <script src="popup.js"></script>
+
+  </body>
+</html>

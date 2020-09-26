@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,  
+    "name": "IsItToxic",
+    "version": "0.0.1",
+    "description": "Detecs selected text toxicity using tensorfow.js",
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "isittoxic_32.png"
+      },
+    "permissions": [
+    "activeTab"
+    ],
+    "icons": {
+        "32": "isittoxic_32.png",
+        "64": "isittoxic_64.png"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net/ https://html2canvas.hertzen.com; object-src 'self'"
+  }
